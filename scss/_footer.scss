@@ -1,0 +1,37 @@
+// extends
+.pie{
+	padding:20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pie-icon{
+	@extend .pie;
+	size: 5%; 
+	width: 20px;
+	border-radius: 2px;
+}
+
+
+
+
+// .pie{
+// 	/*padding*/
+// 	padding:30px;
+// 	/****display flex****/
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	a{
+// 		text-decoration: none;
+// 	}
+// }
+
+// .pie__icon--sm{
+// 	/*size*/
+// 	width: 30px;
+// }
+
+// .pie__titulo--md{
+// 	font-size: 2rem;
+// }

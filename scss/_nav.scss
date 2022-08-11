@@ -1,0 +1,73 @@
+//nesting - anidación
+.botonera{
+	background-color:$secondaryColor;
+	padding: 5px 10px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	img{
+		width: 100px;
+		@media (min-width: 320px) and (max-width: 320px){
+			width: 100px;
+		}
+	}
+	ul{
+		display: flex;
+        justify-content: flex-end;
+		li{
+			list-style: none;
+			margin-right: 10px;
+			a{
+				font-family: $mainFont;
+				font-size: $textMd;
+				text-decoration: none;
+                justify-content: flex-end;
+				color:$black;
+				&:hover{
+					color:$keyColor;
+				}
+			}
+		}
+	}
+}
+.logo__principal{
+	border-radius: 55%;
+	width: 135px;
+    // border color:$black;
+    padding: 5px 10px;
+    display: center;
+
+}
+// .bg-fondonav{
+// 	background-color: rgb(51, 221, 201);
+// }
+// #botonera img{
+// 	width: 80%;
+// }
+// #size{
+// 	width: 50vw;
+// }
+.imagencomp{
+	display: flex;
+	width: 50%;
+}
+#aside{
+	grid-area: aside;
+}
+
+.secondNav{
+	background-color: rgb(209, 210, 211);
+	color:#062910 ;
+	padding: 10px ;
+	font-size: 1.3rem;
+	line-height: 1.6em;
+	text-align: center;
+}
+
+.secondNav img{
+		width: 60%;
+}
+h5,p{
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+}

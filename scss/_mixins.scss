@@ -1,0 +1,14 @@
+//mixins
+@mixin texto($size, $interlineado, $color){
+	font-family: $mainFont;
+	font-size: $size;
+	line-height: $interlineado;
+	color:$color;
+	padding: 4px;
+}
+
+h3{
+	@include texto(2em, 2.4em, rgb(249, 251, 252));
+}
+
+

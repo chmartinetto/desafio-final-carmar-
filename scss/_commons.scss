@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-attachment: fixed;
+}
+
+h1,
+h2,{
+	font-family: $secondaryFont;
+	color:$keyColor;
+	margin: 10px 20px;
+	font-weight: $bold;
+}
+
+h1{
+	font-size: $textXl;
+}
+
+h2{
+	font-size: $textLg;
+}
+
+h1,h2{
+	color: black;
+	text-decoration: overline;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+// h3{
+// 	font-size: $textMd;
+// }
+
+p{
+	margin: 10px 20px;
+	font-family: $mainFont;
+	line-height: 1.4em;
+	font-size: $textMd;
+	color:$black;
+}
+
+a{
+	margin: 10px 20px;
+	color:$keyColor;
+	font-size: $textMd;
+	text-decoration: none;
+	font-family: $mainFont;
+}
+
+//backgrounds 
+.bgLight{
+	background-color:$mainColor;
+}
+
+.bgDark{
+	background-color:$black;
+}
+
+.btnXl{
+	width:50%;
+	height: 30px;
+	background-color: $white;
+	color: $keyColor;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-left: 50px;
+	font-size: 2rem;
+	/****display flex****/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h4{
+	color: blanchedalmond;
+
+}
+#textProduct{
+	text-align: justify;
+	color: whitesmoke;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#precio{
+	color: rgb(223, 246, 19);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-decoration: wavy;
+}
+.pie__titulo--md{
+    font-size: 2rem;
+	color:whitesmoke;
+}

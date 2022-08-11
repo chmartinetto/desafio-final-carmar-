@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+/* reset */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu{
+    height: 80px;
+    color: black;
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 95px;
+    padding: 0px 10px;
+    margin-top: 0px;
+    margin-left: 65%;
+}
+.botonera{
+    background-color: rgba(2, 0, 17, 0.5);
+		/*position*/
+		position: sticky;
+		top: 0;
+		/*padding*/
+		padding: 10px 30px;
+		/****display flex****/
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}   
+.botonera ul{
+    /****display flex****/
+   display: flex;
+}
+.botonera ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.botonera ul li a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #080808;
+	/*Subrayado animado*/
+		background-image: linear-gradient(currentColor, currentColor);
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
+		transition: background-size .3s;
+}
+
+    /*hover*/
+.botonera ul li a:hover{
+        color: black;
+        font-weight: 600;
+		/*Subrayado animado*/
+		background-size: 100% 2px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-attachment: fixed;
+}
+
+h1,h2,h3{
+    color: #black;
+    font-family: sans-serif;;
+}
+
+
+p{
+    color:blanchedalmond;
+    line-height: 3rem;
+    font-size: 1.6rem;
+}
+
+/* #radio{
+	border-radius: 5%;
+	background-color: bisque;
+} */
+
+nav{
+    background-color: rgba(238, 188, 247, .5);
+    /*position*/
+    
+    /*padding*/
+    
+    }
+
+    nav ul{
+    /*display*/
+    display: inline-block;
+    
+    }
+
+        nav ul li{
+            list-style: none;
+            /*display*/
+            display: inline-block;
+            /*margin*/
+            margin: 0 8px;
+        
+        }
+
+        nav ul li a{
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: #5B5959;
+        }
+
+        /*hover*/
+        nav ul li a:hover{
+            color: black;
+            font-weight: 600;
+        }
+main{
+ }
+    section{
+        
+
+ }
+/* clases camelCase  */
+
+.textDestacado{
+    background-color: rgba(255, 252, 0, .4);
+
+}
+
+.textBold{
+    font-weight: 600;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.bgLight{
+    background-color:rgba(243, 240, 240, .8) ;
+}
+
+.bgDark{
+    background-color: rgba(195, 190, 190, .8);
+}
+
+
+/*Clases BEM */
+.encabezado__box--white{
+	text-align: center;
+	background-color: white;
+	/*padding*/
+	padding: 5px 0;
+}
+.encabezado__img--fluid{
+	/*size*/
+	width: 100%;
+}
+
+.fabrica__titulo--xxl{
+    font-size: 2rem;
+}
+
+.fabrica__titulo--xl{
+    font-size: 3rem;
+}
+
+.fabrica__titulo--md{
+    font-size: 2rem;
+    /*margin*/
+    
+}
+
+/*Box model - width- height - margin - padding - border*/
+/*Overflow*/
+
+.logo__principal {
+    border-radius: 55%;
+	width: 135px;
+    border color: black;
+    padding: 5px 10px;
+    display: center;
+}
+
+.centrado__caja{
+    position: absolute;
+}
+
+.novedades__articulo{
+    width:300px;
+    height: 200px;
+    overflow: hidden;
+    padding: 20px 30px;
+    border: solid rgba(238, 188, 247, .5) 2px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.fabrica__articulo{
+    width: 90%;
+    height: auto;
+    /*margin-top:30px;
+    margin-right:50px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin:  10px 20px 30px;
+    margin: 50px;*/
+    margin: 50px auto;
+    padding: 50px 30px;
+    border-top: double  2px lightskyblue;
+}
+
+.pie{
+    /*padding*/
+	padding:30px;
+	/****display flex****/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    
+}
+
+.pie__icon--sm{
+    /*size*/
+    width: 30px;
+}
+
+.pie__titulo--md{
+    font-size: 1rem;
+}
+
+/*clase id*/
+#productos h1,
+#productos h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, .7);
+    font-family: Roboto, sans-serif;
+    margin: 20px 0;
+}
+
+.secondNav{
+	background-color: rgb(33, 165, 84);
+	color:#676565 ;
+	padding: 10px ;
+	font-size: 1.3rem;
+	line-height: 1.6em;
+}
+
+	.secondNav img{
+		width: 60%;
+	}
+
+/* defino 3 cols -- 20% 65% 15% -- 4 rows auto - defino las areas */
+.contenedor{
+	display: grid;
+	grid-template-columns: 20% 65% 15%;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: 
+	"nav nav nav"
+	"header header header"
+	"solicitud solicitud aside"
+	"footer footer footer";
+}
+
+#mainNav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+}
+
+#solicitud{
+	grid-area: solicitud;
+}
+
+#aside{
+	grid-area: aside;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+/* ======================= media queries INDEX ======================= */
+/* min-width: 320px definimos 1cols (100VW) y 5 rows auto */
+@media (min-width: 320px){
+	.contenedor{
+		grid-template columns: 100px;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav" 
+		"header" 
+		"solicitud" 
+		"aside" 
+		"footer";
+	}
+
+	/* los productos van apilados */
+	#productos .galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* reducimos el width de las figure a 90%*/
+	#productos .galeria figure{
+		width: 90%;
+	}
+
+	/*aside queda abajo de los productos dirección horizontal*/
+	#aside{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+
+/* min-width: 768px definimos 2cols (30VW - 70VW) y 5 rows auto */
+@media (min-width: 768px){
+	.contenedor{
+		grid-template-columns: 30vw 70vw;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav nav" 
+		"header header" 
+		"solicitud solicitud" 
+		"aside aside" 
+		"footer footer";
+	}
+
+	/* los productos van apilados */
+	#productos .galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* reducimos el width de las figure a 90%*/
+	#productos .galeria figure{
+		width: 90%;
+	}
+
+	/*aside queda abajo de los productos dirección horizontal*/
+	#aside{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+/* min-width: 1024px defino 3 cols con medidas vw y 4 rows*/
+@media (min-width: 1024px){
+	
+	.contenedor{
+		grid-template-columns: 20vw 70vw 10vw;
+		grid-template-areas: 
+		"nav nav nav" 
+		"header header header" 
+		"solicitud solicitud aside" 
+		"footer footer footer";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#aside{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	/*achico las imgs del aside al 70%*/
+	#aside img{
+		width: 70%;
+	}
+
+	/* llevo al 100% el width de los productos*/
+	#productos .galeria figure{
+		width: 80%;
+	}
+
+	/* cambio la dirección de la botonera a row*/
+	.botonera{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	/*sacamos el margin bottom 0 al logo*/
+		.botonera img{
+			margin-bottom: 0;
+		}
+}
+
+/* min-width: 1200px cambio la dirección de la gale de productos a row*/
+@media (min-width: 1200px){
+	
+	#productos .galeria{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	/*achico el width de los productos al 30%*/
+		#productos .galeria figure{
+			width: 30%;
+		}
+
+}
+
+/* ======================= media queries NOSOTROS ======================= */
+
+/* Aniamaciones  */
+
+@keyframes headerAnimation{
+	0%{background-image: url(../img/header.jpg)}
+	25%{background-image: url(../img/man-fishing1.jpg)}
+	50%{background-image: url(../img/fishing4.jpg)}
+	75%{background-image: url(../img/blog-de-pesca.jpg)}
+	100%{background-image: url(../img/Pesca-deportiva.png)}
+
+}
+	
+header{
+	height: 75vh;
+	animation-name:headerAnimation;
+	animation-duration: 9s;
+	animation-iteration-count:infinite;
+	background-size:cover;
+	animation-timing-function: ease-in;
+}

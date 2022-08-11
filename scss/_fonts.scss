@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Roboto&display=swap');
+
+//fonts
+$mainFont:'Roboto', sans-serif;
+$secondaryFont:'Nunito Sans', sans-serif;
+
+//text sizing
+$textSm:.8em;
+$textMd:1em;
+$textLg:2em;
+$textXl:3em;
+
+//font - weight
+$bold:600;
+$regular:400;
+$light:300;
+
+
+//clases 
+.textDestacado{
+	background-color: rgba(255, 252, 0, .4);
+}
+
+.textBold{
+	font-weight: $bold;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
